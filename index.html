@@ -117,7 +117,7 @@
         }
 
         .glitch-overlay::before {
-            content: " ";
+            content: "";
             display: block;
             position: fixed;
             top: 0;
@@ -205,11 +205,10 @@
 
     <div class="card" id="mainCard">
 
-        <!-- ==================== STAGE 1 ==================== -->
+        <!-- STAGE 1 -->
 
         <div id="stage1">
 
-            <!-- ตราบริษัท -->
             <img
                 src="images/IMG_0477.jpeg"
                 alt="Naypyidaw Yok's Lime Co."
@@ -259,7 +258,6 @@
                 ผูกโบว์สีม่วงนั่งกินครัวซองต์อยู่ริมน้ำ
             </div>
 
-            <!-- Morse shortcut -->
             <span
                 class="morse-link"
                 onclick="goToStage6()"
@@ -270,15 +268,13 @@
         </div>
 
 
-        <!-- ==================== STAGE 3 ==================== -->
+        <!-- STAGE 3 -->
 
         <div id="stage3" style="display:none;">
 
-            <img
-                src="https://imgbox.com"
-                alt="Furry"
-                class="main-img"
-            >
+            <p>
+                Furro Security Department
+            </p>
 
             <button class="btn" onclick="resetToStage1()">
                 กลับหน้าแรก
@@ -287,15 +283,13 @@
         </div>
 
 
-        <!-- ==================== STAGE 4 ==================== -->
+        <!-- STAGE 4 -->
 
         <div id="stage4" style="display:none;">
 
-            <img
-                src="https://imgbox.com"
-                alt="French Duck"
-                class="main-img"
-            >
+            <p>
+                Canard European Ambassador
+            </p>
 
             <button class="btn" onclick="resetToStage1()">
                 กลับหน้าแรก
@@ -304,7 +298,7 @@
         </div>
 
 
-        <!-- ==================== STAGE 5 ==================== -->
+        <!-- STAGE 5 -->
 
         <div
             id="stage5"
@@ -319,11 +313,19 @@
                 Click here to see Naypyidaw Yok's Lime Co. 🇲🇲👉
             </p>
 
-            <img
-                src="https://imgbox.com"
-                alt="Decoys"
-                class="main-img"
+            <div
+                style="
+                    height:220px;
+                    background:#e8ece9;
+                    border-radius:8px;
+                    display:flex;
+                    align-items:center;
+                    justify-content:center;
+                    color:#7f8c8d;
+                "
             >
+                Naypyidaw Yok's Lime Co.
+            </div>
 
             <div
                 class="guess-blink"
@@ -335,7 +337,7 @@
         </div>
 
 
-        <!-- ==================== STAGE 6 ==================== -->
+        <!-- STAGE 6 -->
 
         <div
             id="stage6"
@@ -370,7 +372,7 @@
         </div>
 
 
-        <!-- ==================== STAGE 7 ==================== -->
+        <!-- STAGE 7 -->
 
         <div
             id="stage7"
@@ -405,7 +407,7 @@
         </div>
 
 
-        <!-- ==================== FINAL ==================== -->
+        <!-- FINAL -->
 
         <div id="stageFinal" style="display:none;">
 
@@ -424,12 +426,6 @@
                 ยินดีต้อนรับสู่บริษัท)
             </h2>
 
-            <img
-                src="https://imgbox.com"
-                alt="Success Logo"
-                class="main-img"
-            >
-
             <p
                 style="
                     font-weight:bold;
@@ -444,7 +440,7 @@
     </div>
 
 
-    <!-- ==================== GLITCH ==================== -->
+    <!-- GLITCH -->
 
     <div
         id="glitchOverlay"
@@ -467,7 +463,6 @@
             YOK.EXE HAS STOPPED WORKING
         </div>
 
-        <!-- รูป Glitch -->
         <img
             src="images/att.zhmdIilVwHKK9iC8EofZLdx49g__M1l3sBwOVdICh84.jpeg"
             alt="Company Glitch"
@@ -502,8 +497,6 @@
 
     <script>
 
-        /* ==================== GENERAL ==================== */
-
         function hideAllStages() {
 
             document.getElementById("stage1").style.display = "none";
@@ -526,16 +519,12 @@
         }
 
 
-        /* ==================== LIME INFO ==================== */
-
         function showLimeInfo() {
 
             document.getElementById("limeInfoBox").style.display = "block";
 
         }
 
-
-        /* ==================== EXTRA PAGES ==================== */
 
         function goToStage3() {
 
@@ -555,8 +544,6 @@
         }
 
 
-        /* ==================== APPLICATION ==================== */
-
         function goToStage5() {
 
             hideAllStages();
@@ -565,8 +552,6 @@
 
         }
 
-
-        /* ==================== GLITCH ==================== */
 
         function goToStage2() {
 
@@ -591,8 +576,6 @@
 
         }
 
-
-        /* ==================== PUZZLE 1 ==================== */
 
         function goToStage6() {
 
@@ -623,8 +606,6 @@
 
         }
 
-
-        /* ==================== PUZZLE 2 ==================== */
 
         function checkAns2() {
 
